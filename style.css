@@ -172,3 +172,23 @@ section h2{
 }
 
 }
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.galeria img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+transition:.4s;
+cursor:pointer;
+}
+
+.galeria img:hover{
+transform:scale(1.05);
+}
